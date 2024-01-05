@@ -22,7 +22,7 @@ API_HASH = os.environ.get("API_HASH", "d8c8dab274f9a811814a6a96d044028e")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002034865356"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6446763201"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6321494230"))
 
 #Port
 PORT = os.environ.get("PORT", "8040")
