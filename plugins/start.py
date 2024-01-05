@@ -87,14 +87,10 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-    [
-        InlineKeyboardButton("⚡ 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 ⚡", url="https://t.me/Trippy_xt"),
-    ],
-    [
-                    InlineKeyboardButton("⚔️ About Me ⚔️", callback_data = "about"),
-                    InlineKeyboardButton("🫧 Close 🫧", callback_data = "close")
-        
-    ]
+                [
+                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
+                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                ]
             ]
         )
         await message.reply_text(
@@ -126,8 +122,8 @@ REPLY_ERROR = """<code>Use this command as a reply to any telegram message with 
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(text="⚡ Join Channel 1 ⚡", url=client.invitelink),
-            InlineKeyboardButton(text="⚡ Join Channel 2 ⚡", url=client.invitelink2),
+            InlineKeyboardButton(text="Join Channel ", url=client.invitelink),
+            InlineKeyboardButton(text="Join Channel ", url=client.invitelink2),
         ]
     ]
     try:
